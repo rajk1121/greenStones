@@ -1,0 +1,107 @@
+
+        .lp-title {
+            color: #FFDC00;
+            font-size: 1.5rem;
+        }
+
+        .lp-container {
+            position: relative;
+            border-radius: 15px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 60vh;
+        }
+
+        .bc {
+
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0);
+            height: 100% !important;
+            width: 100% !important;
+            transition: 0.5s
+        }
+
+        .bc:hover {
+
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #green {
+            padding: 0.5rem;
+            border-radius: 10px;
+            padding-left: 4rem;
+            background-color: #2eca6a;
+            color: white;
+            opacity: 0;
+            /* display: none */
+        }
+
+        .card {
+            margin-bottom: 18rem;
+            /* width: 30%; */
+            border: 0px !important;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 40px;
+            left: 10px;
+            border-radius: 30px;
+            border-style: solid;
+            border-color: #2eca6a;
+            border-width: 2px;
+            padding: 1rem;
+            font-size: 1.5rem;
+            color: white;
+
+            opacity: 0;
+        }
+
+        .top-right {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            font-size: 2rem;
+
+            opacity: 0;
+        }
+
+        .lp-value {
+
+            font-size: 1.8rem;
+        }
+
+        a {
+            color: black !important;
+            text-decoration: none !important;
+        }
+        a:hover{
+            color: #2eca6a
+        }
+        #mynav{
+            display: none;
+        }
+#body{
+    display: none;
+}
+        .lp .img {
+            height: 50vh;
+        }
+
+        #vertical {
+            width: 5px;
+            background-color: #2eca6a;
+            margin-right: 5rem;
+        }
+
+        h1 {
+            margin: 5rem 0 !important;
+        }
+
+        .top {
+            margin: 5rem 0;
+        }
+
+      

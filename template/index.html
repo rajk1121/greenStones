@@ -1,0 +1,649 @@
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../mobile.css">
+    <link rel="stylesheet" href="../tablet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" href="../nav-style.css">
+    <link rel="stylesheet" href="../nav-tab.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <title>Home</title>
+    <style>
+        .footer-ul {
+            list-style: none;
+            justify-content: flex-start;
+            text-align: center;
+        }
+
+        .base {
+            font-size: 220%;
+
+        }
+
+        .footer {
+            background-color: #ecf0f1;
+            margin-top: 5%;
+        }
+
+        .fas {
+            color: #f1c40f;
+        }
+
+        ul.list-inline {
+            text-align: center;
+            margin-top: 0;
+            margin: 0 auto;
+            margin-bottom: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gif">
+        <img src="../loader-128x/Preloader_3.gif" alt="" srcset="">
+    </div>
+
+    <!--###################START HERE####################-->
+
+    <div id="body">
+        <!-- <div id="mySidenav" class="sidenav">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#container2" onclick="closeNav()">FOOD DELIVERY</a>
+            <a href="#container3" onclick="closeNav()">HOW IT WORKS</a>
+            <a href="#container4" onclick="closeNav()">OUR CITIES</a>
+            <a href="#container6" onclick="closeNav()">SIGN UP</a>
+        </div>
+
+
+        <nav class="normal">
+            <a href="javascript:void(0)" class="opn-btn" onclick="openNav()">
+                <i style="color: white" class="fas fa-2x fa-bars"></i>
+            </a>
+            <img class="logo-md coll-img" src="./images/logo.png">
+        </nav> -->
+        <div id="mynav">
+            <div id="mySidenav" class="sidenav">
+
+                <a id="sb-link" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a id="sb-link" href="../home" onclick="closeNav()">HOME</a>
+                <a id="sb-link" href="../about" onclick="closeNav()">ABOUT</a>
+                <a id="sb-link" href="../contact.html" onclick="closeNav()">CONTACT US</a>
+                <a id="sb-link" href="../rcard" onclick="closeNav()">REVIEW</a>
+                <a id="sb-link" href="../property-grid" onclick="closeNav()">PROPERTY</a>
+                <a id="sb-link" href="../acard" onclick="closeNav()">AGENTS</a>
+            </div>
+
+            <!-- logo-md -->
+            <nav class="normal">
+                <a href="javascript:void(0)" class="opn-btn" onclick="openNav()">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </a>
+                <span class="green">Green</span><span class="black">Stones</span>
+            </nav>
+
+            <nav id="top">
+                <!-- <img class="logo" src="../images/logo.jpeg"> -->
+                <div class="logo">
+                    <span class="green">Green</span>
+                    <span class="black">Stones</span>
+                </div>
+                <ul style="margin-right: 5rem !important">
+
+                    <li>
+                        <a href="../home" id="link">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../about.html" id="link">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../property-grid" id="link">
+                            PROPERTY
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../acard" id="link">
+                            AGENTS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../contact.html" id="link">
+                            CONTACT US
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../rcard" id="link">
+                            REVIEWS
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+                <div class="item active top-item">
+                    <img class="top-img" src="./images/p1.jpg" alt="Los Angeles">
+                    <div class="carousel-caption">
+                        <h3>Los Angeles</h3>
+                        <p>LA is always so much fun!</p>
+                    </div>
+                </div>
+
+                <div class="item top-item">
+                    <img class="top-img" src="./images/p2.jpg" alt="Chicago">
+                    <div class="carousel-caption">
+                        <h3>Chicago</h3>
+                        <p>Thank you, Chicago!</p>
+                    </div>
+                </div>
+
+                <div class="item top-item">
+                    <img class="top-img" src="./images/p3.jpg" alt="New York">
+                    <div class="carousel-caption">
+                        <h3>New York</h3>
+                        <p>We love the Big Apple!</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <div class="container">
+            <h1 class="heading">Our Services</h1>
+            <div class="row">
+                <div class="card text-center col-xs-12 col-sm-12 col-md-4">
+                    <div>
+                        <h1><i class="fa fa-3x fa-heart"></i>Lifestyle</h1>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Card title that wraps to a new line</h4>
+                        <p class="card-text text-left">This is a longer card with supporting text below as a natural
+                            lead-in to
+                            additional
+                            content. This content
+                            is a little bit longer.</p>
+                    </div>
+                </div>
+                <div class="card text-center col-xs-12 col-sm-12 col-md-4 ">
+                    <div>
+                        <h1><i class="fa fa-3x fa-heart"></i>Loan</h1>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Card title that wraps to a new line</h4>
+                        <p class="card-text text-left">This is a longer card with supporting text below as a natural
+                            lead-in to
+                            additional
+                            content. This content
+                            is a little bit longer.</p>
+                    </div>
+                </div>
+                <div class="card text-center col-xs-12 col-sm-12 col-md-4 ">
+                    <div>
+                        <h1><i class="fa fa-3x fa-heart"></i>Sell</h1>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Card title that wraps to a new line</h4>
+                        <p class="card-text text-left">This is a longer card with supporting text below as a natural
+                            lead-in to
+                            additional
+                            content. This content
+                            is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex">
+                <h1 class="flex-fill heading">Latest Properties</h1>
+                <h1 class="lp-h1"><a class="flex-fill all text-right" href="property-grid">All Properties ></a></h1>
+            </div>
+            <div class="row lp">
+                <div class="card text-center  col-xs-12 col-sm-12 col-md-4">
+                    <div id="img">
+                        <div class="lp-container">
+                            <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/300x200" alt="">
+
+                            <div class="bottom-left">Rent | Rs120000</div>
+                            <div class="top-right"><a href="property-grid/1">Know More ></a></div>
+                            <h1 style="margin-left: 1rem !important" class="inner-text">Mount Road</h1>
+                        </div>
+
+
+                    </div>
+                    <div id="green">
+                        <section class="d-flex text-left">
+                            <p class="flex-fill text-left">
+                                <span class="lp-title">Area</span><br>
+                                <span class="lp-value">540 m</span><span class="align-top">2</span>
+                            </p>
+                            <p class="flex-fill text-left"><span class="lp-title">Baths</span><br>
+                                <span class="lp-value">3</span></p>
+                            <p class="flex-fill text-left"><span class="lp-title">Rooms</span><br>
+                                <span class="lp-value">4</span></p>
+                            <p class="flex-fill text-left"><span class="lp-title">Garages</span><br>
+                                <span class="lp-value">2</span></p>
+                        </section>
+                    </div>
+                </div>
+                <div class="card text-center  col-xs-12 col-sm-12 col-md-4">
+                    <div class="img">
+                        <div class="lp-container">
+                            <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/300x200" alt="">
+                            <div class="bottom-left">Rent | Rs120000</div>
+                            <div class="top-right"><a href="property-grid/2">Know More ></a></div>
+
+                        </div>
+                        <div id="green">
+                            <section class="d-flex text-left">
+                                <p class="flex-fill text-left">
+                                    <span class="lp-title">Area</span><br>
+                                    <span class="lp-value">540 m</span><span class="align-top">2</span>
+                                </p>
+                                <p class="flex-fill text-left"><span class="lp-title">Baths</span><br>
+                                    <span class="lp-value">3</span></p>
+                                <p class="flex-fill text-left"><span class="lp-title">Rooms</span><br>
+                                    <span class="lp-value">4</span></p>
+                                <p class="flex-fill text-left"><span class="lp-title">Garages</span><br>
+                                    <span class="lp-value">2</span></p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-center col-xs-12 col-sm-12 col-md-4">
+                    <div class="img">
+                        <div class="lp-container">
+                            <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/300x200" alt="">
+                            <div class="bottom-left">Rent | Rs120000 <br> </div>
+                            <div class="top-right"><a href="property-grid/3">Know More ></a></div>
+
+                        </div>
+                        <div id="green">
+                            <section class="d-flex text-left">
+                                <p class="flex-fill text-left">
+                                    <span class="lp-title">Area</span><br>
+                                    <span class="lp-value">540 m</span><span class="align-top">2</span>
+                                </p>
+                                <p class="flex-fill text-left"><span class="lp-title">Baths</span><br>
+                                    <span class="lp-value">3</span></p>
+                                <p class="flex-fill text-left"><span class="lp-title">Rooms</span><br>
+                                    <span class="lp-value">4</span></p>
+                                <p class="flex-fill text-left"><span class="lp-title">Garages</span><br>
+                                    <span class="lp-value">2</span></p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex">
+                <h1 class="flex-fill heading">Best Agents</h1>
+                <h1 class="lp-h1"><a class="flex-fill all text-right" href="#">All Agents ></a></h1>
+            </div>
+            <div id="f-i" class="food-items">
+
+                <section>
+
+                    <div class="food1">
+
+                        <div class="foods">
+                            <p class="bc1" style="font-size: 2.5rem; opacity: 0;">
+                                <br><a class="ca-a" href="#">Mr. Rajat
+                                    Kumar</a><br><br><br><br><br><br><br>
+                                <p class="bc1 f-email">Email: rajat.mishra1234@outlook.com</p>
+                                <p class="bc1 f-phone">Contact: 123456789</p>
+
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+                <section>
+                    <div class="food2">
+
+
+                        <div class="foods">
+                            <p class="bc2" style="font-size: 2.5rem; opacity: 0;"><br><a class="ca-a" href="#">Mr. Rajat
+                                    Kumar</a><br><br><br><br><br><br><br>
+                                <p class="bc2 f-email">Email: rajat.mishra1234@outlook.com</p>
+                                <p class="bc2 f-phone">Contact: 123456789</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+
+                    <div class="food3">
+
+                        <div class="foods">
+                            <p class="bc3" style="font-size: 2.5rem; opacity: 0;"><br><a class="ca-a" href="#">Mr. Rajat
+                                    Kumar</a><br><br><br><br><br><br><br>
+                                <p class="bc3 f-email">Email: rajat.mishra1234@outlook.com</p>
+                                <p class="bc3 f-phone">Contact: 123456789</p>
+                        </div>
+
+                    </div>
+                </section>
+
+
+
+
+            </div>
+            <div class="d-flex">
+                <h1 class="flex-fill heading">Our Customers</h1>
+                <h1 class="lp-h1"><a class="flex-fill all text-right" href="#">All Customers ></a></h1>
+            </div>
+
+            <div class="container">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="item top-item">
+                                <div class="customers">
+                                    <img class="testimonials" src="./images/1.jpg" alt="">
+                                    <div class="review">
+                                        <div class="rev-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste
+                                            perferendis
+                                            expedita est
+                                            reprehenderit quam commodi praesentium sapiente officiis deleniti maxime
+                                            temporibus
+                                            sint, earum
+                                            minus
+                                            possimus quidem nam dolores animi ea excepturi. Excepturi cumque aperiam
+                                            corporis at,
+                                            praesentium
+                                            cum
+                                            sapiente natus in totam ipsum, molestias recusandae animi! Quas, magnam quo.
+                                        </div>
+
+                                        <img src="./images/1.jpg" alt="" class="small-img">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <img src="la.jpg" alt="Los Angeles" style="width:100%;"> -->
+                        </div>
+
+                        <div class="item">
+                            <div class="item top-item">
+                                <div class="customers">
+                                    <img class="testimonials" src="./images/1.jpg" alt="">
+                                    <div class="review">
+                                        <div class="rev-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste
+                                            perferendis
+                                            expedita est
+                                            reprehenderit quam commodi praesentium sapiente officiis deleniti maxime
+                                            temporibus
+                                            sint, earum
+                                            minus
+                                            possimus quidem nam dolores animi ea excepturi. Excepturi cumque aperiam
+                                            corporis at,
+                                            praesentium
+                                            cum
+                                            sapiente natus in totam ipsum, molestias recusandae animi! Quas, magnam quo.
+                                        </div>
+
+                                        <img src="./images/1.jpg" alt="" class="small-img">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <img src="chicago.jpg" alt="Chicago" style="width:100%;"> -->
+                        </div>
+
+                        <div class="item">
+                            <div class="item top-item">
+                                <div class="customers">
+                                    <img class="testimonials" src="./images/1.jpg" alt="">
+                                    <div class="review">
+                                        <div class="rev-text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste
+                                            perferendis
+                                            expedita est
+                                            reprehenderit quam commodi praesentium sapiente officiis deleniti maxime
+                                            temporibus
+                                            sint, earum
+                                            minus
+                                            possimus quidem nam dolores animi ea excepturi. Excepturi cumque aperiam
+                                            corporis at,
+                                            praesentium
+                                            cum
+                                            sapiente natus in totam ipsum, molestias recusandae animi! Quas, magnam quo.
+                                        </div>
+
+                                        <img src="./images/1.jpg" alt="" class="small-img">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <img src="ny.jpg" alt="New york" style="width:100%;"> -->
+                        </div>
+                    </div>
+
+
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3 style="font-weight: bold; margin-top: 17%">JAVADEVELOPERS</h3>
+                        <br>
+                        <p>Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo
+                            consequat
+                            duis sed aute
+                            irure.<br>
+                            <br>
+                            <span style="color: black; font-weight: bold">Phone:</span><span style="color: #2980b9">
+                                9412631540</span>
+                            <br>
+                            <span style="color: black; font-weight: bold">Email:</span><a href='#'
+                                style="color: #2980b9; text-decoration: none">
+                                Javadevelopers12@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3 style="font-weight: bold; margin-top: 17%">THE COMPANY</h3>
+                        <br>
+                        <p>
+                            <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                                Site Map</a><br>
+                            <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                                Legal</a><br>
+                            <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                                Agent Admin</a><br>
+                            <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                                Careers</a><br>
+                            <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                                Affliate</a><br>
+                            <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                                Privacy Policy</a>
+
+
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3 style="font-weight: bold; margin-top: 17%">NATIONAL SITES</h3>
+                        <br>
+                        <p>
+                            <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                                Delhi</a><br>
+                            <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                                Punjab</a><br>
+                            <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                                Uttar Pradesh</a><br>
+                            <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                                Bangalore</a><br>
+                            <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                                Gujarat</a><br>
+                            <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                                Maharashtra</a>
+
+
+                        </p>
+
+                    </div>
+                    <div>
+                    </div>
+
+                </div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div style="margin: auto;">
+                            <ul class="footer-ul">
+                                <li>
+                                    Home
+                                </li>
+                                <li>
+                                    Home
+                                </li>
+                                <li>
+                                    Home
+                                </li>
+                                <li>
+                                    Home
+                                </li>
+                                <li>
+                                    Home
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="margin: auto;">
+                        <ul class="footer-ul" style="margin-top: 0.9%">
+                            <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-facebook-f"
+                                        style="font-size: 130%"></i>
+                                </a></li>
+                            <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-twitter"
+                                        style="font-size: 130%"></i>
+                                </a></li>
+                            <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-instagram"
+                                        style="font-size: 130%"></i>
+                                </a></li>
+                            <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-pinterest-p"
+                                        style="font-size: 130%"></i>
+                                </a></li>
+                            <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-whatsapp"
+                                        style="font-size: 130%"></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr style="margin-bottom: 0%; height: 1px ; background-color: lightgray; ">
+                <br>
+                <div class="footnote text-center">Copyright &copy; 2019 Omnifood.All rights reserved.</div>
+                <br>
+
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+        <script src="./test.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script>
+            $('.food1').hover(function () {
+                $('.bc1').addClass("animated fadeIn")
+            }, function () {
+                $('.bc1').removeClass("animated fadeIn")
+            })
+
+            $('.food2').hover(function () {
+                $('.bc2').addClass("animated fadeIn")
+            }, function () {
+                $('.bc2').removeClass("animated fadeIn")
+            })
+
+            $('.food3').hover(function () {
+                $('.bc3').addClass("animated fadeIn")
+            }, function () {
+                $('.bc3').removeClass("animated fadeIn")
+            })
+            $('.carousel').carousel({
+                interval: 3000,
+                keyboard: true,
+                pause: 'hover',
+                wrap: true
+            });
+
+            $('#slider4').on('slide.bs.carousel', function () {
+                console.log('SLIDE!');
+            });
+
+            $('#slider4').on('slid.bs.carousel', function () {
+                console.log('SLID!');
+            });
+
+        </script>
+
+
+</body>
+
+</html>

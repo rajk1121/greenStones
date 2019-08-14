@@ -1,0 +1,72 @@
+.navbar{
+    z-index: 2;
+    background-color: #ecf0f1;
+    /* margin: -2%; */
+}
+.base{
+    font-size: 220%;
+    
+}
+.card{
+    margin-bottom: 3rem;
+}
+/* .media img{
+    width: 40%;
+} */
+.footer{
+    background-color:#ecf0f1;
+    margin-top: 5%;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.fas{
+    color:#f1c40f;
+}
+/* ul.list-inline {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 0%;
+} */
+.heading{
+    border-style: solid;
+    /* border-right-top-bottom: green; */
+border-right: none;
+border-bottom: none;
+border-top: none;
+border-color: green;
+padding:2rem;
+margin:4rem; 
+}
+.map-container{
+    
+overflow:hidden;
+padding-bottom:50%;
+position:relative;
+height:0;
+margin-bottom: 0;
+}
+.map-container iframe{
+    text-align: center;
+
+
+left:12%;
+top:0;
+height:80%;
+width:80%;
+position:absolute;
+margin-bottom: 0%;
+}
+.map{
+    text-align: center;
+    margin-bottom: 0;
+}
+#carouselExampleIndicators{
+    margin-top: -2%;
+}

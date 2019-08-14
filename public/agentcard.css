@@ -1,0 +1,20 @@
+.navbar{
+    z-index: 2;
+    background-color: #ecf0f1;
+}
+.base{
+    font-size: 220%;
+    
+}
+.footer{
+    background-color:#ecf0f1;
+    margin-top: 5%;
+}
+.fas{
+    color:#f1c40f;
+}
+ul.list-inline {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 0%;
+}

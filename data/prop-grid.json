@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "rent": 120000,
+        "area": "540m",
+        "baths": 5,
+        "rooms": 4,
+        "garages": 5,
+        "link": "1"
+    },
+    {
+        "id": 2,
+        "rent": 120000,
+        "area": "540m",
+        "baths": 5,
+        "rooms": 4,
+        "garages": 5,
+        "link": "2"
+    },
+    {
+        "id": 3,
+        "rent": 120000,
+        "area": "540m",
+        "baths": 5,
+        "rooms": 4,
+        "garages": 5,
+        "link": "3"
+    },
+    {
+        "id": 4,
+        "rent": 120000,
+        "area": "540m",
+        "baths": 5,
+        "rooms": 4,
+        "garages": 5,
+        "link": "4"
+    }
+]

@@ -1,0 +1,13 @@
+@media only screen and (max-width : 450px){
+     .top-img {
+          
+            height:60vh !important;
+        }
+
+        .top-item {
+            height: 60vh !important;
+        }
+        
+      
+
+}

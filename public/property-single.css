@@ -1,0 +1,123 @@
+
+
+        .top-img {
+            height: 80vh !important;
+            width: 100%;
+        }
+        #body{
+    display: none;
+}
+#mynav{
+            display: none;
+        }
+        .ca-img {
+            width: 100% !important;
+            height: 80%;
+        }
+
+        input {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            height: 60px;
+            margin-bottom: 1rem !important;
+            padding: 1rem 0 !important;
+        }
+
+        .glyphicon:before {
+            font-family: 'Glyphicons Halflings' !important;
+        }
+
+        
+
+        button {
+            height: 60px;
+            width: 50%;
+            background-color: green;
+            border-style: none;
+            color: white !important;
+            transition: background-color 0.5s;
+        }
+
+        button:hover {
+            background-color: black;
+
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+
+        .map {
+            margin: 3rem 0;
+        }
+
+        .amen {
+            margin: -1.5rem !important;
+        }
+
+        .amen-col {
+
+
+            margin-right: 2.5rem !important;
+        }
+
+        #vertical {
+            width: 5px;
+            background-color: green;
+            margin-right: 5rem;
+        }
+
+        h1 {
+            margin: 5rem 0 !important;
+        }
+
+        .loan-description {
+            margin-top: 10rem !important;
+            margin-bottom: 10rem !important;
+        }
+
+
+        h1::after {
+            content: '';
+            margin-top: 2rem;
+            display: block;
+            width: 70px;
+            height: 4px;
+            background-color: #2eca6a;
+
+        }
+
+        .right {
+            float: right !important;
+        }
+
+        ul {
+            padding: 0 !important;
+        }
+
+        .top {
+            margin: 5rem 0;
+        }
+
+        h5 {
+            font-weight: bold !important;
+            font-size: 2rem !important;
+        }
+
+        .margin {
+
+            padding-right: 9rem !important;
+        }
+
+        .text-right {
+            margin: 10px 0 !important;
+        }
+
+        .p-desc {
+            font-size: 2rem;
+        }
+
+        .contact-agent {
+            margin-bottom: 10rem !important;
+        }

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../contact.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="../nav-style.css">
+    <link rel="stylesheet" href="../nav-tab.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .footer-ul {
+            list-style: none;
+            justify-content: flex-start;
+            text-align: center;
+        }
+
+        .base {
+            font-size: 220%;
+
+        }
+
+        .footer {
+            background-color: #ecf0f1;
+            margin-top: 5%;
+        }
+
+        .fas {
+            color: #f1c40f;
+        }
+
+        ul.list-inline {
+            text-align: center;
+            margin-top: 0;
+            margin: 0 auto;
+            margin-bottom: 0%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <nav class="navbar sticky-top navbar-expand-sm navbar-light  mb-2 pb-3.5">
+        <div class="container">
+            <a class=" base navbar-brand h2" href="#"><span style="color: #2ecc71">JAVA</span>DEVELOPERS</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#">Property</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+    <div id="mynav">
+        <div id="mySidenav" class="sidenav">
+
+            <a id="sb-link" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="sb-link" href="../home" onclick="closeNav()">HOME</a>
+            <a id="sb-link" href="../about" onclick="closeNav()">ABOUT</a>
+            <a id="sb-link" href="../contact.html" onclick="closeNav()">CONTACT US</a>
+            <a id="sb-link" href="../rcard" onclick="closeNav()">REVIEW</a>
+            <a id="sb-link" href="../property-grid" onclick="closeNav()">PROPERTY</a>
+            <a id="sb-link" href="../acard" onclick="closeNav()">AGENTS</a>
+        </div>
+
+        <!-- logo-md -->
+        <nav class="normal">
+            <a href="javascript:void(0)" class="opn-btn" onclick="openNav()">
+                <span class="glyphicon glyphicon-align-justify"></span>
+            </a>
+            <span class="green">Green</span><span class="black">Stones</span>
+        </nav>
+
+        <nav id="top">
+            <!-- <img class="logo" src="../images/logo.jpeg"> -->
+            <div class="logo">
+                <span class="green">Green</span>
+                <span class="black">Stones</span>
+            </div>
+            <ul style="margin-right: 5rem !important">
+
+                <li>
+                    <a href="../home" id="link">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="../about.html" id="link">
+                        ABOUT
+                    </a>
+                </li>
+                <li>
+                    <a href="../property-grid" id="link">
+                        PROPERTY
+                    </a>
+                </li>
+                <li>
+                    <a href="../acard" id="link">
+                        AGENTS
+                    </a>
+                </li>
+                <li>
+                    <a href="../contact.html" id="link">
+                        CONTACT US
+                    </a>
+                </li>
+                <li>
+                    <a href="../rcard" id="link">
+                        REVIEWS
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header style="padding-top: 11rem">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active"
+                    style="background-image: url(../images/louis-hansel-OgDrj7Q8EAw-unsplash.jpg)">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">CONTACT US</h2>
+                        <!-- <p class="lead">This is a description for the first slide.</p> -->
+                    </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item"
+                    style="background-image: url('https://images.unsplash.com/photo-1485770958101-9dd7e4ea6d93?ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">CONTACT US </h2>
+                        <!-- <p class="lead">This is a description for the second slide.</p> -->
+                    </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item"
+                    style="background-image: url('http://www.tcifreight.in/wp-content/uploads/2018/12/contact-page-banner.png')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">CONTACT US </h2>
+                        <!-- <p class="lead">This is a description for the third slide.</p> -->
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="heading">
+                <div class="col-md-12 col-lg-8">
+                    <div class="title-single-box">
+                        <h1 class="title-single">Contact US</h1>
+                        <span>Aut voluptas consequatur unde sed omnis ex placeat quis eos. Aut natus
+                            officia corrupti qui autem fugit consectetur quo. Et ipsum eveniet laboriosam voluptas
+                            beatae
+                            possimus qui ducimus. Et voluptatem deleniti. Voluptatum voluptatibus amet. Et esse sed
+                            omnis
+                            inventore hic culpa.</span>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-12 col-lg-4">
+                <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Contact
+                        </li>
+                    </ol>
+                </nav>
+            </div> -->
+        </div>
+    </div>
+    <!-- <class changes>
+        <p
+            style="margin-top: 5%;padding-left: 2.6%;padding-top: 1%;padding-bottom: 1%; margin-left: 13%; font-size: 190%;font-weight: bold;border-left-style: solid;border-left-color: #2ecc71;border-left-width:thick">
+            We Do Great Design For Creative <br>Folks</p>
+    </class> -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-sm-8 m-auto">
+                <div id="slider4" class="carousel slide mb-5" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#slider4" data-slide-to="0"></li>
+                        <li data-target="#slider4" data-slide-to="1"></li>
+                        <li data-target="#slider4" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid " src="./images/caro1.jpg" alt="First Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Slide One</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo?</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="./images/caro2.jpg" alt="Second Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Slide Two</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo?</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="./images/caro3.jpg" alt="Third Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Slide Three</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illo?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                   CONTROLS -->
+    <!-- <a href="#slider4" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <a href="#slider4" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img style="width: 80%; height: 94%" src="./images/image.jpg">
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="display-4">We <span style="color:#2980b9">Never</span><span style="color:#f39c12">
+                                Disappoint!</span></p>
+                        <p style="text-align: left;font-size: 120%">Mauris blandit aliquet elit, eget tincidunt nibh
+                            pulvinar a. Vivamus magna
+                            justo, lacinia eget consectetur sed,
+                            convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                            Vestibulum ante ipsum
+                            primis
+                            in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit
+                            amet aliquam vel,
+                            ullamcorper
+                            sit amet ligula.<br><br> Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget
+                            consectetur sed, convallis at
+                            tellus. Mauris blandit
+                            aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur
+                            sed, convallis at
+                            tellus.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <div class="display-3 text-center" style="color:#16a085">Our Founders</div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p class="display-4">Do <span style="color:#2980b9">It</span><span style="color:#f39c12">
+                                Together</span>
+                        </p>
+                        <p style="text-align: left;font-size: 120%">Mauris blandit aliquet elit, eget tincidunt nibh
+                            pulvinar a. Vivamus
+                            magna
+                            justo, lacinia eget consectetur sed,
+                            convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                            Vestibulum ante
+                            ipsum
+                            primis
+                            in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit
+                            amet aliquam vel,
+                            ullamcorper
+                            sit amet ligula.<br><br> Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget
+                            consectetur sed,
+                            convallis at
+                            tellus. Mauris blandit
+                            aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur
+                            sed, convallis
+                            at
+                            tellus.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img style="width: 80%; height: 94%" src="./images/foundersjpg.jpg">
+                    </div>
+                </div>
+            </div> -->
+    <!-- <div class="contaner"> -->
+    <!-- <div class=" text-center mb-4"> -->
+    <!-- <h1 style="color: #2c3e50; font-size: 300%">Meet Our Team</h1>
+            </div>
+        </div>
+        <div class="card-columns">
+            <div class="card">
+                <img class="card-img-top img-fluid" src="./images/agent-5.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Maria Sharapova</h4>
+                    <p style="color:#34495e" class="card-text">She is our chief Enginner.All our ideas come to life
+                        wither her mind and vision.She has an experience of around
+                        10 years in her field and is considered one of the finest.
+                        <br>
+                        <br>
+                        <span style="color: black; font-weight: bold">Phone:</span><span style="color: #2980b9">
+                            9765234418</span>
+                        <br>
+                        <span style="color: black; font-weight: bold">Email:</span><a href='#'
+                            style="color: #2980b9; text-decoration: none"> Mariahu@hotmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top img-fluid" src="./images/agent-7.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Whitey Williams</h4>
+                    <p style="color:#34495e" class="card-text">She is our Marketing Expert.Only few are known who have
+                        been able to ecade her
+                        wit and charm.She is the one responsible for putting our products into the market.
+                        <br>
+                        <br>
+                        <span style="color: black; font-weight: bold">Phone:</span><span style="color: #2980b9">
+                            9412763540</span>
+                        <br>
+                        <span style="color: black; font-weight: bold">Email:</span><a href='#'
+                            style="color: #2980b9; text-decoration: none"> harakdikaho@orkut.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top img-fluid" src="./images/agent-6.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Rafael Nadal</h4>
+                    <p style="color:#34495e" class="card-text">He is our chief Architect.All our ideas come to life with
+                        his mind
+                        and vision.He has an experience of around
+                        14 years in his field and is considered one of the finest.
+                        <br>
+                        <br>
+                        <span style="color: black; font-weight: bold">Phone:</span><span style="color: #2980b9">
+                            7099865341</span>
+                        <br>
+                        <span style="color: black; font-weight: bold">Email:</span><a href='#'
+                            style="color: #2980b9; text-decoration: none"> pointlelunga@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>  -->
+
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-lg-7 mx-1 col-12">
+                    <div class="form-row">
+                        <div class="form-group col-md-6  ">
+                            <label for="inputname">Name:</label>
+                            <input type="password" class="form-control" id="inputname" placeholder="Your Name">
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="inputEmail4">Email:</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Subject:</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder=" Subject">
+                    </div>
+
+                    <!-- <span>How did you find us </span><select name="cars" class="cars " required>
+            <option value="friend">friend</option>
+            <option value="search">search</option>
+            <option value="find">findt</option>
+            <option value="other">other</option>
+        </select><br>
+        <span>Newsletter?</span><input type="checkbox" value="Yes,please" class="check" required>Yes,please<br>
+        <span>Drop us a line:</span> -->
+                    <div class="form-group">
+                        <label for="inputAddress">Message:</label>
+                        <textarea name="message" rows="10" cols="70" value="your message" id="inputAddress "
+                            class="form-control" placeholder="Your Message is here ">
+                </textarea><br>
+                    </div>
+                    <input type="submit" value="SEND" class="submit">
+
+                </div>
+        </form>
+        <div class="col-lg-4 col-sm-12">
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <h6 class="card-title">ADDRESS:</h4>
+                        <h6 class="card-subtitle text-muted">121 New York ,123212 </h6><br>
+                        <h6 class="card-title">PHONE.NO:</h4>
+                            <h6 class="card-subtitle text-decoration">+91858894639,01128725841 </h6><br>
+                            <h6 class="card-title">E-MAIL:</h4>
+                                <h6 class="card-subtitle text-decoration">propertyatyourstep@gmail.com</h6>
+                                <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quas.</p> -->
+                                <!-- <a class="btn btn-outline-primary" href="#">Read More</a> -->
+                </div>
+            </div>
+            <br>
+            <div class="card col-sm-12">
+                <img class="card-img-top" src="../images/istockphoto-925857874-612x612.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">More Info</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis facere
+                        laudantium, sit ullam non nobis quae quaerat provident. Adipisci commodi totam eius ex dicta
+                        voluptatem vero autem a molestias laborum?
+                    </p>
+                    <a class="btn btn-success btn-block" href="#">Read More</a>
+                </div>
+            </div>
+
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="map">
+        <div id="map-container-google-1" class="z-depth-1-half map-container">
+            <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                style="text-align: center" allowfullscreen></iframe>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3 style="font-weight: bold; margin-top: 17%">JAVADEVELOPERS</h3>
+                    <br>
+                    <p>Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo
+                        consequat
+                        duis sed aute
+                        irure.<br>
+                        <br>
+                        <span style="color: black; font-weight: bold">Phone:</span><span style="color: #2980b9">
+                            9412631540</span>
+                        <br>
+                        <span style="color: black; font-weight: bold">Email:</span><a href='#'
+                            style="color: #2980b9; text-decoration: none">
+                            Javadevelopers12@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 style="font-weight: bold; margin-top: 17%">THE COMPANY</h3>
+                    <br>
+                    <p>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Site Map</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Legal</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Agent Admin</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Careers</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Affliate</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Privacy Policy</a>
+
+
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 style="font-weight: bold; margin-top: 17%">NATIONAL SITES</h3>
+                    <br>
+                    <p>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Delhi</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Punjab</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Uttar Pradesh</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Bangalore</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Gujarat</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Maharashtra</a>
+
+
+                    </p>
+
+                </div>
+                <div>
+                </div>
+
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div style="margin: auto;">
+                        <ul class="footer-ul">
+                            <li>
+                                Home
+                            </li>
+                            <li>
+                                Home
+                            </li>
+                            <li>
+                                Home
+                            </li>
+                            <li>
+                                Home
+                            </li>
+                            <li>
+                                Home
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div style="margin: auto;">
+                    <ul class="footer-ul" style="margin-top: 0.9%">
+                        <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-facebook-f"
+                                    style="font-size: 130%"></i>
+                            </a></li>
+                        <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-twitter"
+                                    style="font-size: 130%"></i>
+                            </a></li>
+                        <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-instagram"
+                                    style="font-size: 130%"></i>
+                            </a></li>
+                        <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-pinterest-p"
+                                    style="font-size: 130%"></i>
+                            </a></li>
+                        <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-whatsapp"
+                                    style="font-size: 130%"></i>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr style="margin-bottom: 0%; height: 1px ; background-color: lightgray; ">
+            <br>
+            <div class="footnote text-center">Copyright &copy; 2019 Omnifood.All rights reserved.</div>
+            <br>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

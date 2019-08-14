@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href='../agent.css' type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="../nav-style.css">
+    <link rel="stylesheet" href="../nav-tab.css">
+    <title>Document</title>
+    <style>
+        /* .navbar {
+            z-index: 2;
+            background-color: #ecf0f1;
+        } */
+        .footer-ul {
+            list-style: none;
+            justify-content: flex-start;
+            text-align: center;
+        }
+
+        .base {
+            font-size: 220%;
+
+        }
+
+        .footer {
+            background-color: #ecf0f1;
+            margin-top: 5%;
+        }
+
+        .fas {
+            color: #f1c40f;
+        }
+
+        ul.list-inline {
+            text-align: center;
+            margin-top: 0;
+            margin: 0 auto;
+            margin-bottom: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <nav class="navbar sticky-top navbar-expand-sm navbar-light  mb-2 pb-3.5">
+        <div class="container">
+            <a class=" base navbar-brand h2" href="#"><span style="color: #2ecc71">JAVA</span>DEVELOPERS</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#">Property</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#">Agents</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+    <div id="mynav">
+        <div id="mySidenav" class="sidenav">
+
+            <a id="sb-link" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="sb-link" href="../home" onclick="closeNav()">HOME</a>
+            <a id="sb-link" href="../about.html" onclick="closeNav()">ABOUT</a>
+            <a id="sb-link" href="../contact.html" onclick="closeNav()">CONTACT US</a>
+            <a id="sb-link" href="../rcard" onclick="closeNav()">REVIEW</a>
+            <a id="sb-link" href="../property-grid" onclick="closeNav()">PROPERTY</a>
+            <a id="sb-link" href="../acard" onclick="closeNav()">AGENTS</a>
+        </div>
+
+        <!-- logo-md -->
+        <nav class="normal">
+            <a href="javascript:void(0)" class="opn-btn" onclick="openNav()">
+                <span class="glyphicon glyphicon-align-justify"></span>
+            </a>
+            <span class="green">Green</span><span class="black">Stones</span>
+        </nav>
+
+        <nav id="top">
+            <!-- <img class="logo" src="../images/logo.jpeg"> -->
+            <div class="logo">
+                <span class="green">Green</span>
+                <span class="black">Stones</span>
+            </div>
+            <ul style="margin-right: 1rem !important">
+
+                <li>
+                    <a href="../home" id="link">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="../about.html" id="link">
+                        ABOUT
+                    </a>
+                </li>
+                <li>
+                    <a href="../property-grid" id="link">
+                        PROPERTY
+                    </a>
+                </li>
+                <li>
+                    <a href="../acard" id="link">
+                        AGENTS
+                    </a>
+                </li>
+                <li>
+                    <a href="../contact.html" id="link">
+                        CONTACT US
+                    </a>
+                </li>
+                <li>
+                    <a href="../rcard" id="link">
+                        REVIEWS
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <br>
+    <div class="Agentcards" style="padding-top: 16rem;">
+
+        <div class="container">
+            <class changes>
+                <p
+                    style="font-size: 270%;font-weight: bold;border-left-style: solid;border-left-color: #2ecc71;border-left-width:thick">
+                    Our <span style="color: #2ecc71">Agents</span></p>
+                <h5 class="display-4 text-center" style="font-size: 180%; font-weight: bold"><span
+                        style="color:#f39c12">They
+                        Make</span> <span style="color: #2c3e50">us Who</span> <span style="color: #27ae60">We
+                        Are</span>
+                </h5>
+            </class>
+            <div class="card-columns flex-wrap">
+                {%agent-card%}
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3 style="font-weight: bold; margin-top: 17%">JAVADEVELOPERS</h3>
+                    <br>
+                    <p>Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo
+                        consequat
+                        duis sed aute
+                        irure.<br>
+                        <br>
+                        <span style="color: black; font-weight: bold">Phone:</span><span style="color: #2980b9">
+                            9412631540</span>
+                        <br>
+                        <span style="color: black; font-weight: bold">Email:</span><a href='#'
+                            style="color: #2980b9; text-decoration: none">
+                            Javadevelopers12@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 style="font-weight: bold; margin-top: 17%">THE COMPANY</h3>
+                    <br>
+                    <p>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Site Map</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Legal</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Agent Admin</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Careers</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Affliate</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Privacy Policy</a>
+
+
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 style="font-weight: bold; margin-top: 17%">NATIONAL SITES</h3>
+                    <br>
+                    <p>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Delhi</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Punjab</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Uttar Pradesh</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Bangalore</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Gujarat</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Maharashtra</a>
+
+
+                    </p>
+
+                </div>
+                <div>
+                </div>
+
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div style="margin: auto;">
+                        <ul class="footer-ul">
+                            <li>
+                                Home
+                            </li>
+                            <li>
+                                Home
+                            </li>
+                            <li>
+                                Home
+                            </li>
+                            <li>
+                                Home
+                            </li>
+                            <li>
+                                Home
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div style="margin: auto;">
+                    <ul class="footer-ul" style="margin-top: 0.9%">
+                        <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-facebook-f"
+                                    style="font-size: 130%"></i>
+                            </a></li>
+                        <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-twitter"
+                                    style="font-size: 130%"></i>
+                            </a></li>
+                        <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-instagram"
+                                    style="font-size: 130%"></i>
+                            </a></li>
+                        <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-pinterest-p"
+                                    style="font-size: 130%"></i>
+                            </a></li>
+                        <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-whatsapp"
+                                    style="font-size: 130%"></i>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr style="margin-bottom: 0%; height: 1px ; background-color: lightgray; ">
+            <br>
+            <div class="footnote text-center">Copyright &copy; 2019 Omnifood.All rights reserved.</div>
+            <br>
+
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+</body>
+
+</html>

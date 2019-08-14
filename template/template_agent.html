@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href='./css/agent.css' type="text/css">
+    <link rel="stylesheet" href="../../nav-style.css">
+    <link rel="stylesheet" href="../../nav-tab.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <style>
+        /* .navbar{
+    z-index: 2;
+    background-color: #ecf0f1;
+} */
+
+        .base {
+            font-size: 220%;
+
+        }
+
+        .footer {
+            background-color: #ecf0f1;
+            margin-top: 5%;
+        }
+
+        .fas {
+            color: #f1c40f;
+        }
+
+        ul.list-inline {
+            text-align: center;
+            margin-top: 1%;
+            margin-bottom: 0%;
+        }
+
+        .hovereffect {
+            /* width:100%;
+height:100%; */
+            float: left;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            cursor: default;
+        }
+
+        .hovereffect .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out
+        }
+
+        .hovereffect img {
+            display: block;
+            position: relative;
+            -webkit-transition: all .4s linear;
+            transition: all .4s linear;
+        }
+
+        .hovereffect h2 {
+            text-transform: uppercase;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            font-size: 17px;
+            background: rgba(0, 0, 0, 0.6);
+            -webkit-transform: translatey(-100px);
+            -ms-transform: translatey(-100px);
+            transform: translatey(-100px);
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            padding: 10px;
+        }
+
+        .hovereffect a.info {
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            color: #fff;
+            border: 1px solid #fff;
+            background-color: transparent;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            margin: 50px 0 0;
+            padding: 7px 14px;
+        }
+
+        .hovereffect a.info:hover {
+            box-shadow: 0 0 5px #fff;
+        }
+
+        .hovereffect:hover img {
+            -ms-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+
+        .hovereffect:hover .overlay {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+
+        .hovereffect:hover h2,
+        .hovereffect:hover a.info {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            -ms-transform: translatey(0);
+            -webkit-transform: translatey(0);
+            transform: translatey(0);
+        }
+
+        .hovereffect:hover a.info {
+            -webkit-transition-delay: .2s;
+            transition-delay: .2s;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <nav class="navbar sticky-top navbar-expand-sm navbar-light  mb-2 pb-3.5">
+        <div class="container">
+            <a class=" base navbar-brand h2" href="#"><span style="color: #2ecc71">JAVA</span>DEVELOPERS</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#">Property</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link h4" href="#">Agents</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+    <div id="mynav">
+        <div id="mySidenav" class="sidenav">
+
+            <a id="sb-link" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="sb-link" href="../../home" onclick="closeNav()">HOME</a>
+            <a id="sb-link" href="../../about.html" onclick="closeNav()">ABOUT</a>
+            <a id="sb-link" href="../../contact.html" onclick="closeNav()">CONTACT US</a>
+            <a id="sb-link" href="../rcard" onclick="closeNav()">REVIEW</a>
+            <a id="sb-link" href="../../property-grid" onclick="closeNav()">PROPERTY</a>
+            <a id="sb-link" href="../../acard" onclick="closeNav()">AGENTS</a>
+        </div>
+
+        <!-- logo-md -->
+        <nav class="normal">
+            <a href="javascript:void(0)" class="opn-btn" onclick="openNav()">
+                <span class="glyphicon glyphicon-align-justify"></span>
+            </a>
+            <span class="green">Green</span><span class="black">Stones</span>
+        </nav>
+
+        <nav id="top">
+            <!-- <img class="logo" src="../images/logo.jpeg"> -->
+            <div class="logo">
+                <span class="green">Green</span>
+                <span class="black">Stones</span>
+            </div>
+            <ul style="margin-right: 1rem !important">
+
+                <li>
+                    <a href="../../home" id="link">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="../../about.html" id="link">
+                        ABOUT
+                    </a>
+                </li>
+                <li>
+                    <a href="../../property-grid" id="link">
+                        PROPERTY
+                    </a>
+                </li>
+                <li>
+                    <a href="../acard" id="link">
+                        AGENTS
+                    </a>
+                </li>
+                <li>
+                    <a href="../../contact.html" id="link">
+                        CONTACT US
+                    </a>
+                </li>
+                <li>
+                    <a href="../rcard" id="link">
+                        REVIEWS
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <class changes>
+        <p
+            style=" font-size: 190%;font-weight: bold;border-left-style: solid;border-left-color: #2ecc71;border-left-width:thick">
+            {%firstname%}{%lastname%}<br><span style="font-weight: normal;font-size: 70% ">{%rank%}</span></p>
+    </class>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img style="width: 90%; height: 99%" src="{%img4%}">
+            </div>
+            <div class="col-sm-6">
+                <p class="display-4"><span style="color:#2980b9">{%firstname%}</span><span style="color:#f39c12">
+                        {%lastname%}</span></p>
+                <p style="text-align: left;font-size: 120%">
+                    {%description%}
+                    <br>
+                    <br>
+                    <span style="color: black; font-weight: bold">Phone:</span><span style="color: #2980b9">
+                        {%phone%}</span>
+                    <br>
+                    <span style="color: black; font-weight: bold">Email:</span><a href='#'
+                        style="color: #2980b9; text-decoration: none">
+                        {%email%}</a>
+                    <br>
+                    <span style="color: black; font-weight: bold">Skype:</span><a href='#'
+                        style="color: #2980b9; text-decoration: none">
+                        {%skype%}</a>
+                    <br>
+                    <span style="color: black; font-weight: bold">linkedin:</span><a href='#'
+                        style="color: #2980b9; text-decoration: none">
+                        {%linkedin%}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <class changes>
+        <p
+            style="margin-top: 5%;padding-left: 2.6%;padding-top: 1%;padding-bottom: 1%; margin-left: 13%; font-size: 190%;font-weight: bold;border-left-style: solid;border-left-color: #2ecc71;border-left-width:thick">
+            Associated Properties</p>
+    </class>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-4 col-sm-12 col-xs-12">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="{%img1%}" alt="" style="height: 400%; width: 100%">
+                    <div class="overlay">
+                        <h2>204 Mount
+                            Olive Road One</h2>
+                        <br><br><br><br><br>
+                        <a class="info" href="#">Know more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-sm-12 col-xs-12">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="{%img2%}" alt="" style="height: 400%; width: 100%">
+                    <div class="overlay">
+                        <h2>204 Mount
+                            Olive Road Two</h2>
+                        <br><br><br><br><br>
+                        <a class="info" href="#">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-sm-12 col-xs-12">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="{%img3%}" alt="" style="height: 400%; width: 100%">
+                    <div class="overlay">
+                        <h2>204 Mount
+                            Olive Road Three</h2>
+                        <br><br><br><br><br>
+                        <a class="info" href="#">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3 style="font-weight: bold; margin-top: 17%">JAVADEVELOPERS</h3>
+                    <br>
+                    <p>Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo
+                        consequat
+                        duis sed aute
+                        irure.<br>
+                        <br>
+                        <span style="color: black; font-weight: bold">Phone:</span><span style="color: #2980b9">
+                            9412631540</span>
+                        <br>
+                        <span style="color: black; font-weight: bold">Email:</span><a href='#'
+                            style="color: #2980b9; text-decoration: none">
+                            Javadevelopers12@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 style="font-weight: bold; margin-top: 17%">THE COMPANY</h3>
+                    <br>
+                    <p>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Site Map</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Legal</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Agent Admin</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Careers</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Affliate</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Privacy Policy</a>
+
+
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 style="font-weight: bold; margin-top: 17%">NATIONAL SITES</h3>
+                    <br>
+                    <p>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Delhi</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Punjab</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Uttar Pradesh</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Bangalore</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Gujarat</a><br>
+                        <a href="#" style="text-decoration: none"><i class="fas fa-chevron-right "></i>
+                            Maharashtra</a>
+
+
+                    </p>
+
+                </div>
+                <div>
+                </div>
+
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div style="margin: auto;">
+                        <ul class="footer-ul">
+                            <li>
+                                Home
+                            </li>
+                            <li>
+                                Home
+                            </li>
+                            <li>
+                                Home
+                            </li>
+                            <li>
+                                Home
+                            </li>
+                            <li>
+                                Home
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div style="margin: auto;">
+                    <ul class="footer-ul" style="margin-top: 0.9%">
+                        <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-facebook-f"
+                                    style="font-size: 130%"></i>
+                            </a></li>
+                        <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-twitter"
+                                    style="font-size: 130%"></i>
+                            </a></li>
+                        <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-instagram"
+                                    style="font-size: 130%"></i>
+                            </a></li>
+                        <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-pinterest-p"
+                                    style="font-size: 130%"></i>
+                            </a></li>
+                        <li><a href='#' style="text-decoration: none; color: black"><i class="fab fa-whatsapp"
+                                    style="font-size: 130%"></i>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr style="margin-bottom: 0%; height: 1px ; background-color: lightgray; ">
+            <br>
+            <div class="footnote text-center">Copyright &copy; 2019 Omnifood.All rights reserved.</div>
+            <br>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+</body>
+
+</html>
