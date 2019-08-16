@@ -34,6 +34,8 @@ const getacard = async function (req, res) {
       op = op.replace(/{%img1%}/g, agents[i]["img1"]);
       op = op.replace(/{%img2%}/g, agents[i]["img2"]);
       op = op.replace(/{%img3%}/g, agents[i]["img3"]);
+
+      op = op.replace(/{%ID%}/g, agents[i]["id"]);
       cdata = cdata + op;
     }
     // console.log(cdata);

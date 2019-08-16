@@ -34,6 +34,12 @@ const getProp = async (req, res) => {
     str5 = str5.replace(/{%GARAGES%}/g, data["garages"]);
     str5 = str5.replace(/{%DESCRIPTION1%}/g, data["desc1"]);
     str5 = str5.replace(/{%DESCRIPTION2%}/g, data["desc2"]);
+    str5 = str5.replace(/{%DESCRIPTION3%}/g, data["desc3"]);
+    str5 = str5.replace(/{%DESCRIPTION4%}/g, data["desc4"]);
+    str5 = str5.replace(/{%DESCRIPTION5%}/g, data["desc5"]);
+    str5 = str5.replace(/{%DESCRIPTION6%}/g, data["desc6"]);
+    str5 = str5.replace(/{%DESCRIPTION7%}/g, data["desc7"]);
+    str5 = str5.replace(/{%DESCRIPTION8%}/g, data["desc8"]);
     str5 = str5.replace(/{%ONE%}/g, data["one"]);
     str5 = str5.replace(/{%TWO%}/g, data["two"]);
     str5 = str5.replace(/{%THREE%}/g, data["three"]);
@@ -56,6 +62,7 @@ const getProp = async (req, res) => {
 
 }
 const postProp = (req, res) => {
+    console.log("hello")
     propModel.create(req.body).then((doc) => {
         res.status(201).json({
             status: "Created",
@@ -107,6 +114,7 @@ const getPropGrid = async (req, res) => {
         str4 = str4.replace(/{%Baths%}/, adat.baths);
 
         str4 = str4.replace(/{%ROOMS%}/, adat.rooms);
+        str4 = str4.replace(/{%IMG%}/, adat.img);
 
         str4 = str4.replace(/{%Garages%}/, adat.garages);
         str4 = str4.replace(/{%LINK%}/, adat.links);

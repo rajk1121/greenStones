@@ -1,38 +1,42 @@
-[
-    {
-        "id": 1,
-        "rent": 120000,
-        "area": "540m",
-        "baths": 5,
-        "rooms": 4,
-        "garages": 5,
-        "link": "1"
-    },
-    {
-        "id": 2,
-        "rent": 120000,
-        "area": "540m",
-        "baths": 5,
-        "rooms": 4,
-        "garages": 5,
-        "link": "2"
-    },
-    {
-        "id": 3,
-        "rent": 120000,
-        "area": "540m",
-        "baths": 5,
-        "rooms": 4,
-        "garages": 5,
-        "link": "3"
-    },
-    {
-        "id": 4,
-        "rent": 120000,
-        "area": "540m",
-        "baths": 5,
-        "rooms": 4,
-        "garages": 5,
-        "link": "4"
-    }
-]
+        [
+            {
+                "id": 1,
+                "rent": "1.5 Lacs",
+                "area": "200 m",
+                "baths": 1,
+                "rooms": 3,
+                "garages": 1,
+                "links": "1",
+                "img": "../images/property-5.jpg"
+            },
+            {
+                "id": 2,
+                "rent": "2 Lacs",
+                "area": "371m",
+                "baths": 3,
+                "rooms": 2,
+                "garages": 0,
+                "links": "2",
+                "img": "../images/property-1.jpg"
+            },
+            {
+                "id": 3,
+                "rent": "24 Lacs",
+                "area": "540m",
+                "baths": 2,
+                "rooms": 4,
+                "garages": 1,
+                "links": "3",
+                "img": "../images/property-3.jpg"
+            },
+            {
+                "id": 4,
+                "rent": "3 Crore",
+                "area": "640m",
+                "baths": 5,
+                "rooms": 4,
+                "garages": 5,
+                "links": "4",
+                "img": "../images/p7.jpeg"
+            }
+        ]

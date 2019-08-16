@@ -2,20 +2,19 @@ const mongoose = require('mongoose');
 const validator = require('validator');
 const propGridSchema = new mongoose.Schema({
     rent: {
-        type: String, required: true,
-        validate: function abc(val) {
-            var str = val.split(" ").join("");
-            if (!validator.isNumeric(str)) {
-                throw new Error("Name contains numerics");
-            }
+        type: String,
+        required: true
 
-        }
     },
     id: {
         type: Number,
         required: true
     },
+    img: {
+        type: String,
+        required: true,
 
+    },
 
     area: {
         type: String,

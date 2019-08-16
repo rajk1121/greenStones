@@ -11,6 +11,11 @@ const propSingleSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    beds: {
+        type: String,
+        required: true,
+        default: "2"
+    },
 
 
     area: {
@@ -65,6 +70,32 @@ const propSingleSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    desc3: {
+        type: String,
+        required: true
+    },
+    desc4: {
+        type: String,
+        required: true
+    },
+    desc5: {
+        type: String,
+        required: true
+    },
+    desc6: {
+        type: String,
+        required: true
+    },
+    desc7: {
+        type: String,
+        required: true
+    },
+    desc8: {
+        type: String,
+        required: true
+    },
+
+
     one: {
         type: String,
         required: true
@@ -110,7 +141,7 @@ const propSingleSchema = new mongoose.Schema({
         required: true
     },
     rent: {
-        type: Number,
+        type: String,
         required: true
     }
 
