@@ -7,7 +7,6 @@ const propRouter = require('./Router/property');
 
 const reviewrouter = require("./Router/reviewcrouter");
 const agentrouter = require("./Router/agentcRouter");
-var cors = require('cors');
 const DB = "mongodb+srv://rajk1121:Rajat1121@cluster0-chamy.mongodb.net/test?retryWrites=true&w=majority";
 const port = process.env.PORT || 80;
 mongoose.connect(DB, {

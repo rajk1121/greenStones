@@ -9,10 +9,8 @@ var propModel = require('../Model/prop-single');
 const getProp = async (req, res) => {
     var id = req.params.id;
     var data = await propModel.findOne({ "id": id });
-    console.log(typeof data)
     var str6 = str1;
     var str5 = str;
-    // console.log(data.title)
     str5 = str5.replace(/{%TITLE%}/g, data["title"]);
     str6 = str6.replace(/{%TITLE%}/g, data["title"]);
     str5 = str5.replace(/{%LOCATION%}/g, data["location"]);
@@ -21,15 +19,12 @@ const getProp = async (req, res) => {
     str5 = str5.replace(/{%LINK3%}/g, data["link3"]);
     str5 = str5.replace(/{%RENT%}/g, data["rent"]);
     str5 = str5.replace(/{%ID%}/g, data["id"]);
-    console.log(data.id)
     str5 = str5.replace(/{%LOCATION%}/g, data["location"]);
     str5 = str5.replace(/{%TYPE%}/g, data["type"]);
     str5 = str5.replace(/{%STATUS%}/g, data["status"]);
     str5 = str5.replace(/{%AREA%}/g, data["area"]);
-    console.log(data)
     str5 = str5.replace(/{%BEDS%}/g, data["beds"]);
     str5 = str5.replace(/{%ROOOMS%}/g, data["rooms"]);
-
     str5 = str5.replace(/{%BATHS%}/g, data["baths"]);
     str5 = str5.replace(/{%GARAGES%}/g, data["garages"]);
     str5 = str5.replace(/{%DESCRIPTION1%}/g, data["desc1"]);
@@ -49,11 +44,9 @@ const getProp = async (req, res) => {
     str5 = str5.replace(/{%SEVEN%}/g, data["seven"]);
     str5 = str5.replace(/{%EIGHT%}/g, data["eight"]);
     str5 = str5.replace(/{%NINE%}/g, data["nine"]);
-
     str5 = str5.replace(/{%AGENT_PIC%}/g, data["agent-pic"]);
     str5 = str5.replace(/{%AGENT-NAME%}/g, data["agent-name"]);
     str5 = str5.replace(/{%AGENT-DESC%}/g, data["agent-desc"]);
-    // console.log(str5);
     str6 = str6.replace(/{%WORK%}/, str5);
     // // console.log(str6);
 
